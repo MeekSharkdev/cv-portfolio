@@ -503,24 +503,17 @@
     window.onload = function () {
         const carousel = document.getElementById('carousel');
 
-        // Clone images for seamless scroll
-        const images = Array.from(carousel.children);
-        images.forEach(img => {
-            const clone = img.cloneNode(true);
-            carousel.appendChild(clone);
-        });
+        // Duplicate all images for seamless scroll
+        carousel.innerHTML += carousel.innerHTML;
 
         let scrollSpeed = 1; // pixels per frame
         let scrollPosition = 0;
 
         function animateCarousel() {
             scrollPosition += scrollSpeed;
-
-            // Reset scroll when reach half of the content
             if (scrollPosition >= carousel.scrollWidth / 2) {
-                scrollPosition = 0;
+                scrollPosition = 0; // reset when reach half
             }
-
             carousel.scrollLeft = scrollPosition;
             requestAnimationFrame(animateCarousel);
         }
@@ -528,7 +521,6 @@
         animateCarousel();
     };
 </script>
-
 
 </body>
 

@@ -334,7 +334,7 @@
 
         <!-- Carousel -->
 <div class="overflow-hidden relative w-full">
-    <div id="carousel" class="inline-flex gap-6">
+    <div id="carousel" class="flex gap-6">
         <!-- 24 Images -->
         <img src="./assets/images/solehub/7.png" class="w-72 h-48 object-cover rounded-lg shadow-lg">
         <img src="./assets/images/solehub/9.png" class="w-72 h-48 object-cover rounded-lg shadow-lg">
@@ -500,35 +500,25 @@
 
 <!-- Carousel animation -->
 <script>
-    window.onload = function () {
-        const carousel = document.getElementById('carousel');
+    const carousel = document.getElementById('carousel');
 
-        // Clone images for seamless scroll
-        const images = Array.from(carousel.children);
-        images.forEach(img => {
-            const clone = img.cloneNode(true);
-            carousel.appendChild(clone);
-        });
+    // Duplicate all images inside JS for seamless scroll
+    carousel.innerHTML += carousel.innerHTML;
 
-        let scrollSpeed = 1; // pixels per frame
-        let scrollPosition = 0;
+    let scrollSpeed = 1; // pixels per frame
+    let scrollPosition = 0;
 
-        function animateCarousel() {
-            scrollPosition += scrollSpeed;
-
-            // Reset scroll when reach half of the content
-            if (scrollPosition >= carousel.scrollWidth / 2) {
-                scrollPosition = 0;
-            }
-
-            carousel.scrollLeft = scrollPosition;
-            requestAnimationFrame(animateCarousel);
+    function animateCarousel() {
+        scrollPosition += scrollSpeed;
+        if (scrollPosition >= carousel.scrollWidth / 2) {
+            scrollPosition = 0; // reset when reach half
         }
+        carousel.scrollLeft = scrollPosition;
+        requestAnimationFrame(animateCarousel);
+    }
 
-        animateCarousel();
-    };
+    animateCarousel();
 </script>
-
 
 </body>
 
