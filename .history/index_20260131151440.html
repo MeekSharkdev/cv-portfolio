@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Hero Section -->
+    <header>
+        <!-- Upper Left Container -->
+        <section class="py-12 px-6 md:px-16 bg-gray-50">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8">
+        
+                <!-- Profile Image -->
+                <div class="flex-shrink-0">
+                    <img src="assets/profile-placeholder.jpg" alt="Profile Picture"
+                        class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-lg shadow-lg">
+                </div>
+        
+                <!-- Info Section -->
+                <div class="flex flex-col justify-center gap-4">
+                    <!-- Full Name -->
+                    <h1 class="text-4xl md:text-5xl font-bold">Your Full Name</h1>
+        
+                    <!-- Location -->
+                    <div class="flex items-center gap-2 text-gray-600">
+                        <!-- Location icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5 9 6.343 9 8s1.343 3 3 3z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 21s-6-7-6-11a6 6 0 1112 0c0 4-6 11-6 11z" />
+                        </svg>
+                        <span>NCR, Philippines</span>
+                    </div>
+        
+                    <!-- Buttons -->
+                    <div class="flex gap-4 mt-4">
+                        <a href="assets/your-resume.pdf" target="_blank"
+                            class="px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition">
+                            View Resume
+                        </a>
+                        <a href="mailto:your.email@example.com"
+                            class="px-6 py-2 border border-black text-black rounded-lg hover:bg-black hover:text-white transition">
+                            Send Email
+                        </a>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+    </header>
+
+    <!-- Features Section -->
+<!-- About Me Section (Lower of Upper Left Container) -->
+<section class="py-6 px-6 md:px-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto mt-5 p-6 bg-white rounded-xl shadow-lg shadow-gray-300/20">
+
+        <!-- Header with Icon -->
+        <div class="flex items-center gap-3 mb-4">
+            <!-- About Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M12 12a4 4 0 110-8 4 4 0 010 8z" />
+            </svg>
+            <h2 class="text-2xl font-semibold">About Me</h2>
+        </div>
+
+        <!-- Paragraphs -->
+        <div class="flex flex-col gap-4 text-gray-700">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+            <p>I graduated last September 2025 and I am passionate about technology, programming, and continuous
+                learning.</p>
+            <p>I am also the son of amazing parents, and I enjoy solving problems and building innovative solutions.</p>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Video/Media Section -->
+    <section id="media" class="py-20 px-6 md:px-16 bg-gray-50">
+        <h2 class="text-3xl font-bold text-center mb-12">Watch Our Demo</h2>
+        <div class="flex justify-center">
+            <video controls class="w-full max-w-3xl rounded-lg shadow-lg">
+                <source src="assets/demo-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p class="text-center mt-6 max-w-2xl mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+        </p>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-6 md:px-16 bg-white">
+        <h2 class="text-3xl font-bold text-center mb-12">Testimonials</h2>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
+            <div class="p-6 bg-gray-100 rounded-lg shadow text-center">
+                <p class="mb-4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                <span class="font-bold">— John Doe</span>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-lg shadow text-center">
+                <p class="mb-4">"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                <span class="font-bold">— Jane Smith</span>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-lg shadow text-center">
+                <p class="mb-4">"Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>
+                <span class="font-bold">— Mike Johnson</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="bg-black text-white text-center py-20 px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started?</h2>
+        <p class="mb-8 max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt.</p>
+        <a href="#signup" class="px-8 py-4 bg-white text-black rounded-lg hover:bg-gray-100 transition">
+            Sign Up Now
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-sm text-gray-500 bg-gray-50">
+        &copy; 2026 Your Website Name. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

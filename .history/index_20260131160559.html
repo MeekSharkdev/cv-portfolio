@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Hero Section -->
+<header>
+    <!-- Upper Left Container -->
+    <section class="py-12 px-6 md:px-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8">
+
+            <!-- Profile Image -->
+            <div class="flex-shrink-0">
+                <img src="assets/profile-placeholder.jpg" alt="Profile Picture"
+                    class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-lg shadow-lg">
+            </div>
+
+            <!-- Info Section -->
+            <div class="flex flex-col justify-center gap-4">
+                <!-- Full Name -->
+                <h1 class="text-4xl md:text-5xl font-bold">Your Full Name</h1>
+
+                <!-- Location -->
+                <div class="flex items-center gap-2 text-gray-700">
+                    <!-- Location icon (black & white stroke only) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5 9 6.343 9 8s1.343 3 3 3z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 21s-6-7-6-11a6 6 0 1112 0c0 4-6 11-6 11z" />
+                    </svg>
+                    <span>NCR, Philippines</span>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex gap-4 mt-4">
+                    <a href="assets/your-resume.pdf" target="_blank"
+                        class="px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition">
+                        View Resume
+                    </a>
+                    <a href="mailto:your.email@example.com"
+                        class="px-6 py-2 border border-black text-black rounded-lg hover:bg-black hover:text-white transition">
+                        Send Email
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</header>
+
+
+    <!-- Features Section -->
+<!-- About Me + Experience Side-by-Side -->
+<section class="py-6 px-6 md:px-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto mt-5 flex flex-col md:flex-row gap-6">
+
+        <!-- About Me (Left) -->
+        <div class="md:w-1/2 p-6 bg-white rounded-xl shadow-lg shadow-gray-300/20">
+            <!-- Header with Icon -->
+            <div class="flex items-center gap-3 mb-4">
+                <!-- About Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M13 16h-1v-4h-1m1-4h.01M12 12h.01M12 12a4 4 0 110-8 4 4 0 010 8z" />
+                </svg>
+                <h2 class="text-2xl font-semibold">About Me</h2>
+            </div>
+
+            <!-- Paragraphs -->
+            <div class="flex flex-col gap-4 text-gray-700">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.</p>
+                <p>I graduated last September 2025 and I am passionate about technology, programming, and continuous
+                    learning.</p>
+                <p>I am also the son of amazing parents, and I enjoy solving problems and building innovative solutions.
+                </p>
+            </div>
+        </div>
+
+<!-- Experience / Timeline (Right) -->
+<div class="md:w-1/2 p-6 bg-white rounded-xl shadow-lg shadow-gray-300/20">
+    <!-- Header with Icon -->
+    <div class="flex items-center gap-3 mb-6">
+        <!-- Standard Icon for all section headers -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <circle cx="12" cy="12" r="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <h2 class="text-2xl font-semibold">Experience</h2>
+    </div>
+
+    <!-- Timeline -->
+    <div class="relative border-l-2 border-gray-300 pl-8 flex flex-col gap-10">
+
+        <!-- Graduate (Latest, Top) -->
+        <div class="relative">
+            <div class="absolute -left-5 top-0 w-4 h-4 bg-black rounded-full border-2 border-white"></div>
+            <div class="flex justify-between items-center">
+                <h3 class="text-lg font-bold">Graduate in BS Information Technology</h3>
+                <span class="text-black font-bold text-lg">2026</span>
+            </div>
+            <p class="text-gray-700 mt-2 ml-1">Completed degree with focus on software development and capstone
+                projects.</p>
+        </div>
+
+        <!-- Internship / OJT -->
+        <div class="relative">
+            <div class="absolute -left-5 top-0 w-3 h-3 bg-gray-400 rounded-full border-2 border-white"></div>
+            <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold">OJT / Internship</h3>
+                <span class="text-gray-500 font-medium">2025</span>
+            </div>
+            <p class="text-gray-600 mt-1 ml-1">Web revamping (backend side) completed successfully.</p>
+        </div>
+
+        <!-- Capstone Project -->
+        <div class="relative">
+            <div class="absolute -left-5 top-0 w-3 h-3 bg-gray-400 rounded-full border-2 border-white"></div>
+            <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold">My Capstone Project</h3>
+                <span class="text-gray-500 font-medium">2024</span>
+            </div>
+            <p class="text-gray-600 mt-1 ml-1">Web-based appointment scheduling system. I was the team leader.</p>
+        </div>
+
+        <!-- Bootcamp -->
+        <div class="relative">
+            <div class="absolute -left-5 top-0 w-3 h-3 bg-gray-400 rounded-full border-2 border-white"></div>
+            <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold">Basic Fundamentals Bootcamp</h3>
+                <span class="text-gray-500 font-medium">2023</span>
+            </div>
+            <p class="text-gray-600 mt-1 ml-1">Attended basic fundamentals bootcamp for web development.</p>
+        </div>
+
+    </div>
+</div>
+
+    <!-- Tech Stack Section (Below About Me Section) -->
+    <section class="py-6 px-6 md:px-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto mt-5 p-6 bg-white rounded-xl shadow-lg shadow-gray-300/20">
+    
+            <!-- Section Header -->
+            <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2">
+                <!-- Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17l4-4 4 4m0-8l-4 4-4-4" />
+                </svg>
+                Tech Stack & Skills
+            </h2>
+    
+            <!-- Categories -->
+            <div class="flex flex-col gap-6">
+    
+                <!-- Frontend -->
+                <div>
+                    <h3 class="font-bold mb-2">Frontend:</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">HTML</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">CSS</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">JavaScript</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">React (Vite)</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">Tailwind CSS</span>
+                    </div>
+                </div>
+    
+                <!-- Backend -->
+                <div>
+                    <h3 class="font-bold mb-2">Backend:</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">PHP</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">C++</span>
+                    </div>
+                </div>
+    
+                <!-- Database -->
+                <div>
+                    <h3 class="font-bold mb-2">Database:</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">MySQL</span>
+                    </div>
+                </div>
+    
+                <!-- Tools & Frameworks -->
+                <div>
+                    <h3 class="font-bold mb-2">Tools & Frameworks:</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">GitHub</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">VSCode</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">Figma</span>
+                    </div>
+                </div>
+    
+                <!-- Foundational Skills -->
+                <div>
+                    <h3 class="font-bold mb-2">Foundational Skills:</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">API Integration (Beginner &
+                            Learning)</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">Responsive Web Design</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">JavaScript (Learning)</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">Python (Learning)</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">Laravel Framework (Basic &
+                            Learning)</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">Postman (Learning)</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">Node.js (Learning)</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm">Supabase (Learning)</span>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- Recent Certifications & Seminars Section (Below Tech Stack) -->
+    <section class="py-6 px-6 md:px-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto mt-5 p-6 bg-white rounded-xl shadow-lg shadow-gray-300/20">
+    
+            <!-- Section Header -->
+            <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2">
+                <!-- Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6m0-6V9m0 6v3" />
+                </svg>
+                Recent Certifications & Seminars
+            </h2>
+    
+            <!-- Items -->
+            <div class="flex flex-col gap-4">
+    
+                <!-- Certification -->
+                <div class="flex items-center gap-3 p-3 bg-gray-100 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <div class="flex justify-between w-full">
+                        <span class="font-medium">TESDA NCII CSS - Computer Systems Servicing</span>
+                        <span class="text-gray-500">2025</span>
+                    </div>
+                </div>
+    
+                <!-- Seminar: AI in the Workplace -->
+                <div class="flex items-center gap-3 p-3 bg-gray-100 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3" />
+                    </svg>
+                    <div class="flex justify-between w-full">
+                        <span class="font-medium">Seminar: AI in the Workplace</span>
+                        <span class="text-gray-500">2025</span>
+                    </div>
+                </div>
+    
+                <!-- Seminar: Project Management & Web Development -->
+                <div class="flex items-center gap-3 p-3 bg-gray-100 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3" />
+                    </svg>
+                    <div class="flex justify-between w-full">
+                        <span class="font-medium">Seminar: Project Management & Web Development</span>
+                        <span class="text-gray-500">2025</span>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    </section>
+
+<!-- Project Carousel Section (Above Footer) -->
+<section class="py-12 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+
+        <!-- Section Title -->
+        <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2">
+            <!-- Icon (Optional) -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h18v14H3V5z" />
+            </svg>
+            Project Screenshots
+        </h2>
+
+        <!-- Carousel -->
+        <div class="overflow-hidden relative">
+            <div class="flex animate-scroll whitespace-nowrap gap-6">
+                <!-- Blank placeholder images -->
+                <img src="assets/project1-placeholder.jpg" alt="Project 1"
+                    class="w-72 h-48 object-cover rounded-lg shadow-lg">
+                <img src="assets/project2-placeholder.jpg" alt="Project 2"
+                    class="w-72 h-48 object-cover rounded-lg shadow-lg">
+                <img src="assets/project3-placeholder.jpg" alt="Project 3"
+                    class="w-72 h-48 object-cover rounded-lg shadow-lg">
+                <img src="assets/project4-placeholder.jpg" alt="Project 4"
+                    class="w-72 h-48 object-cover rounded-lg shadow-lg">
+                <!-- Duplicate images for seamless loop -->
+                <img src="assets/project1-placeholder.jpg" alt="Project 1"
+                    class="w-72 h-48 object-cover rounded-lg shadow-lg">
+                <img src="assets/project2-placeholder.jpg" alt="Project 2"
+                    class="w-72 h-48 object-cover rounded-lg shadow-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Call to Action Section -->
+<!-- Goals, Social Links & Contact Section -->
+<section class="py-6 px-6 md:px-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto mt-5 p-6 bg-white rounded-xl shadow-lg shadow-gray-300/20">
+
+        <div class="flex flex-col md:flex-row gap-8">
+
+            <!-- Goals / Objectives -->
+            <div class="md:w-1/3">
+                <h2 class="text-2xl font-semibold mb-3 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12h6m-3-3v6m0-6V9m0 6v3" />
+                    </svg>
+                    Goals / Objectives
+                </h2>
+                <p class="text-gray-700">
+                    Honestly, I know this is not enough knowledge for now, but I am seeking opportunities that will help
+                    me contribute my foundational skills while learning in the field. These opportunities will allow me
+                    to excel and grow my career further.
+                </p>
+            </div>
+
+            <!-- Social Links -->
+            <div class="md:w-1/3">
+                <h2 class="text-2xl font-semibold mb-3 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5 9 6.343 9 8s1.343 3 3 3z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 21s-6-7-6-11a6 6 0 1112 0c0 4-6 11-6 11z" />
+                    </svg>
+                    Social Links
+                </h2>
+                <div class="flex flex-col gap-2">
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank"
+                        class="flex items-center gap-2 text-blue-700 hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.785 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.027-3.062-1.867-3.062-1.868 0-2.154 1.459-2.154 2.968v5.698h-3v-10h2.881v1.367h.041c.401-.759 1.379-1.557 2.839-1.557 3.036 0 3.596 2.002 3.596 4.604v5.586z" />
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/yourprofile" target="_blank"
+                        class="flex items-center gap-2 text-gray-800 hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 .5c-6.627 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.111.82-.261.82-.577 0-.285-.011-1.04-.017-2.042-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.083-.729.083-.729 1.205.085 1.839 1.238 1.839 1.238 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.303-5.466-1.333-5.466-5.933 0-1.31.468-2.381 1.235-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.289-1.552 3.295-1.23 3.295-1.23.655 1.653.243 2.873.12 3.176.77.84 1.233 1.911 1.233 3.221 0 4.61-2.803 5.625-5.475 5.922.43.371.813 1.102.813 2.222 0 1.604-.015 2.897-.015 3.293 0 .319.216.694.825.576 4.765-1.589 8.2-6.085 8.2-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://instagram.com/yourprofile" target="_blank"
+                        class="flex items-center gap-2 text-pink-600 hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.35 3.608 1.325.974.974 1.263 2.241 1.325 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.35 2.633-1.325 3.608-.974.974-2.241 1.263-3.608 1.325-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.35-3.608-1.325-.974-.974-1.263-2.241-1.325-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.849c.062-1.366.35-2.633 1.325-3.608C4.532 2.513 5.799 2.225 7.165 2.163 8.431 2.105 8.811 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.773.13 4.663.38 3.677 1.366 2.69 2.353 2.44 3.463 2.382 4.742.014 8.332 0 8.741 0 12s.014 3.668.072 4.948c.058 1.279.308 2.389 1.295 3.376.987.987 2.097 1.237 3.376 1.295 1.28.058 1.689.072 4.948.072s3.668-.014 4.948-.072c1.279-.058 2.389-.308 3.376-1.295.987-.987 1.237-2.097 1.295-3.376.058-1.28.072-1.689.072-4.948s-.014-3.668-.072-4.948c-.058-1.279-.308-2.389-1.295-3.376-.987-.987-2.097-1.237-3.376-1.295C15.668.014 15.259 0 12 0z" />
+                            <circle cx="12" cy="12" r="3.6" />
+                        </svg>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="md:w-1/3">
+                <h2 class="text-2xl font-semibold mb-3 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    Contact
+                </h2>
+                <div class="flex flex-col gap-2 text-gray-700">
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16 12a4 4 0 10-8 0 4 4 0 008 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v7" />
+                        </svg>
+                        <span>your.email@example.com</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5h12M9 3v2m6 6h2M15 9v2m-6 6h2m6 0h2M15 15v2m-6 0v2" />
+                        </svg>
+                        <span>+63 912 345 6789</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 10h.01M12 10h.01M16 10h.01M21 16V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8l4 4h12a2 2 0 002-2z" />
+                        </svg>
+                        <span>Messenger / Chat</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Carousel animation -->
+<style>
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .animate-scroll {
+        animation: scroll 20s linear infinite;
+    }
+</style>
+
+<!-- Footer Section -->
+<footer class="bg-gray-800 text-gray-200 py-6 mt-12">
+    <div class="max-w-6xl mx-auto text-center">
+        &copy; 2025 Ihlon. All rights reserved.
+    </div>
+</footer>
+
+</body>
+
+</html>
