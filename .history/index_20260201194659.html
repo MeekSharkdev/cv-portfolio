@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="transition-colors duration-300">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +8,8 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-50 text-gray-900 m-0 p-0">
+<body class="bg-gray-50 dark:bg-slate-900 text-gray-900 dark:text-gray-200 m-0 p-0">
+
 
     <!-- Hero Section -->
 <header>
@@ -17,16 +17,11 @@
     <section class="py-12 px-6 md:px-16 bg-gray-50">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8">
 
-        <!-- Profile Image -->
-        <div class="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden shadow-2xl group">
-            <!-- Default Image -->
-            <img src="./assets/images/Cropted.jpg"
-                class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0">
-        
-            <!-- Hover Image -->
-            <img src="./assets/images/shytype.png"
-                class="w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-        </div>
+            <!-- Profile Image -->
+            <div class="flex-shrink-0">
+                <img src="./assets/images/Cropted.jpg" alt="Profile Picture"
+                    class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl shadow-2xl">
+            </div>
 
             <!-- Info Section -->
             <div class="flex flex-col justify-center gap-4">
@@ -53,7 +48,7 @@
                 <div class="flex gap-4 mt-4">
 
                     <!-- View Resume -->
-                    <a href="./assets/images/NOGOT CV - Dev - IMG.pdf" target="_blank" class="px-6 py-2 bg-black text-white border border-black rounded-lg
+                    <a href="assets/your-resume.pdf" target="_blank" class="px-6 py-2 bg-black text-white border border-black rounded-lg
                             hover:bg-white hover:text-black hover:border-black
                             transition-colors duration-800 ease-in-out">
                         View Resume
@@ -66,17 +61,21 @@
                             transition-colors duration-800 ease-in-out">
                         Invite for Interview
                     </a>
+
                 </div>
+
             </div>
+
         </div>
     </section>
 </header>
 
     <!-- Features Section -->
+<!-- About Me + Experience Side-by-Side -->
 <section class="py-6 px-6 md:px-16 bg-gray-50">
     <div class="max-w-6xl mx-auto mt-5 flex flex-col md:flex-row gap-6">
 
-        <!-- About Me -->
+        <!-- About Me (Left) -->
         <div class="md:w-1/2 p-6 bg-white rounded-2xl shadow-2xl shadow-gray-300/20">
             <!-- Header with Icon -->
             <div class="flex items-center gap-3 mb-4">
@@ -101,7 +100,7 @@
 
         </div>
 
-        <!-- Experience / Timeline -->
+        <!-- Experience / Timeline (Right) -->
         <div class="md:w-1/2 p-6 bg-white rounded-2xl shadow-2xl shadow-gray-300/20">
             <!-- Header with Icon -->
             <div class="flex items-center gap-3 mb-6">
@@ -111,7 +110,7 @@
             <!-- Timeline -->
             <div class="relative border-l-2 border-gray-300 pl-8 flex flex-col gap-8">
 
-                <!-- Graduate -->
+                <!-- Graduate (Latest, Top) -->
                 <div class="relative">
                     <div class="flex justify-between items-center">
                         <h2 class="text-xl font-bold"><li>Graduate in BS Information Technology</li></h2>
@@ -246,7 +245,7 @@
         </div>
     </section>
 
-    <!-- Recent Certifications & Seminars Section -->
+    <!-- Recent Certifications & Seminars Section (Below Tech Stack) -->
     <section class="py-6 px-6 md:px-16 bg-gray-50">
         <div class="max-w-6xl mx-auto mt-5 p-6 bg-white rounded-2xl shadow-2xl shadow-gray-300/20">
     
@@ -281,7 +280,7 @@
         
             <!-- Seminar: AI in the Workplace -->
             <div class="flex items-center gap-3 p-3 bg-gray-200 rounded-2xl">
-                <!-- Icon -->
+                <!-- AI / Lightbulb Icon -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-600" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -308,10 +307,12 @@
             </div>
         
         </div>
+
+    
         </div>
     </section>
 
-<!-- Project Carousel Section -->
+<!-- Project Carousel Section (Above Footer) -->
 <section>
     <div class="max-w-8xl mx-auto">
 
@@ -381,6 +382,8 @@
     </div>
 </section>
 
+
+    <!-- Call to Action Section -->
 <!-- Goals, Social Links & Contact Section -->
 <section class="py-6 px-6 md:px-16 bg-gray-50">
     <div class="max-w-6xl mx-auto mt-5 p-6 bg-white rounded-2xl shadow-2xl shadow-gray-300/20">
@@ -485,6 +488,7 @@
                 </svg>
                 <span>+63 910 660 3019</span>
             </div>
+
         
                 <!-- Chat / Messenger -->
                 <div class="flex items-center gap-2">
@@ -557,6 +561,7 @@
 
     typeEffect();
 </script>
+
 
 </body>
 
