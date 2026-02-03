@@ -530,7 +530,7 @@
 <script>
     const texts = [
         "Ihlon Gyve A. Nogot",
-        "shy, don't touch me (photo)"
+        "I'm shy, don't touch me ()"
     ];
 
     const typingElement = document.getElementById("typing-text");
@@ -547,7 +547,7 @@
             charIndex++;
 
             if (charIndex === currentText.length) {
-                setTimeout(() => isDeleting = true, 1000); // pause after typing
+                setTimeout(() => isDeleting = true, 2500); // pause after typing
             }
         } else {
             typingElement.textContent = currentText.slice(0, charIndex - 1);

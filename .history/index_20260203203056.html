@@ -528,44 +528,35 @@
 
 </script>
 <script>
-    const texts = [
-        "Ihlon Gyve A. Nogot",
-        "shy, don't touch me (photo)"
-    ];
-
+    const text = "Ihlon Gyve A. Nogot";
     const typingElement = document.getElementById("typing-text");
 
-    let textIndex = 0;
-    let charIndex = 0;
+    let index = 0;
     let isDeleting = false;
 
     function typeEffect() {
-        const currentText = texts[textIndex];
-
         if (!isDeleting) {
-            typingElement.textContent = currentText.slice(0, charIndex + 1);
-            charIndex++;
+            typingElement.textContent = text.slice(0, index + 1);
+            index++;
 
-            if (charIndex === currentText.length) {
-                setTimeout(() => isDeleting = true, 1000); // pause after typing
+            if (index === text.length) {
+                setTimeout(() => isDeleting = true, 9000); // pause after typing
             }
         } else {
-            typingElement.textContent = currentText.slice(0, charIndex - 1);
-            charIndex--;
+            typingElement.textContent = text.slice(0, index - 1);
+            index--;
 
-            if (charIndex === 0) {
+            if (index === 0) {
                 isDeleting = false;
-                textIndex = (textIndex + 1) % texts.length; // switch text
             }
         }
 
-        const speed = isDeleting ? 70 : 120;
+        const speed = isDeleting ? 80 : 120;
         setTimeout(typeEffect, speed);
     }
 
     typeEffect();
 </script>
-
 
 </body>
 
